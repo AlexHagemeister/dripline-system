@@ -160,6 +160,7 @@ You verify the increment works. You tell the agent it's done. The agent writes t
 | Command | Input | Output |
 |---|---|---|
 | `init-dripline` | Project root | `docs/`, `docs/specs/`, `AGENTS.md` |
+| `prime-dripline` | Start of session | Status summary + next action |
 | `plan-dripline-roadmap` | Design doc | Increment plan in chat for review |
 | `create-dripline-roadmap-doc` | Increment plan in context | `docs/ROADMAP.md` |
 | `create-dripline-spec` | Roadmap in context | `docs/specs/[slug].md` |
@@ -171,6 +172,7 @@ Commands live in `commands/` and are symlinked into `~/.cursor/commands/` for gl
 ```bash
 git clone <repo> ~/dev/dripline-system
 ln -s ~/dev/dripline-system/commands/init-dripline.md ~/.cursor/commands/init-dripline.md
+ln -s ~/dev/dripline-system/commands/prime-dripline.md ~/.cursor/commands/prime-dripline.md
 ln -s ~/dev/dripline-system/commands/plan-dripline-roadmap.md ~/.cursor/commands/plan-dripline-roadmap.md
 ln -s ~/dev/dripline-system/commands/create-dripline-roadmap-doc.md ~/.cursor/commands/create-dripline-roadmap-doc.md
 ln -s ~/dev/dripline-system/commands/create-dripline-spec.md ~/.cursor/commands/create-dripline-spec.md
