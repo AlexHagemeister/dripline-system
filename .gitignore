@@ -2,3 +2,6 @@
 
 # Cursor hook runtime state — transient, not part of the repo
 .cursor/hooks/state/
+
+# Local machine setup — not committed
+*.local.sh
