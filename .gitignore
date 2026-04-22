@@ -1,0 +1,4 @@
+.DS_Store
+
+# Cursor hook runtime state — transient, not part of the repo
+.cursor/hooks/state/
