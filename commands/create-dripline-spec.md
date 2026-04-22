@@ -30,6 +30,7 @@ This is the working document for the current increment.
 - Add sub-items or inline notes under a task as needed.
 - Each task group that introduces verifiable behavior ends with a test task: write tests using the project's test framework, then run them. Do not check off the test task until tests pass.
 - Skip the test task for pure setup/config groups (e.g. installing dependencies, creating directories) where there is no behavior to verify.
+- If you encounter an error you cannot resolve — a failing test, unexpected behavior, or a blocker requiring a decision — stop immediately and consult the user before continuing.
 - Record any choices that affect downstream increments in Decisions.
 - Do not mark the increment Done in ROADMAP.md until the user confirms completion.
 - When the user confirms completion, write a concise summary into the INCREMENT_SUMMARY block.
@@ -61,4 +62,5 @@ This is the working document for the current increment.
 - Test tasks should name what they're testing ("Write and run tests for JWT middleware") not just say "write tests"
 - Do not include implementation detail that belongs in code comments
 - Do not pre-fill Decisions or INCREMENT_SUMMARY — leave them empty
+- Do not attempt to resolve errors autonomously — stop and consult the user if a blocker is encountered
 </rules>
